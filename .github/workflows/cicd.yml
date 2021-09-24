@@ -74,7 +74,12 @@ jobs:
         uses: actions/upload-artifact@v1.0.0
         with:
           name: SARIF report
-          path: ${{github.workspace}}/results.sarif
+          path: ./results.sarif
+      - name: Show results
+        run: |
+          cat results.sarif
+          cat results.json
+          
   
   upload_zip:
     runs-on: ubuntu-latest # choose the OS for running the action
