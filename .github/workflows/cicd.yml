@@ -78,7 +78,6 @@ jobs:
       - name: Show results
         run: |
           cat results.sarif
-          cat results.json
           
   
   upload_zip:
