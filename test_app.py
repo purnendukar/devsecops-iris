@@ -28,8 +28,8 @@ def test_pred_virginica():
 
 def test_feedbackloop():
     payload = [{
-        "sepal_length": 3,
-        "sepal_width": 5,
+        "sepal_length": 3.1,
+        "sepal_width": 5.1,
         "petal_length": 3.2,
         "petal_width": 4.5,
         "flower_class": "Iris Virginica"
